@@ -27,6 +27,12 @@ This documentation uses `ssc` throughout for brevity.
 - **Advanced Filtering**: Category, type, status filters + search functionality
 - **Zero Framework Lock-in**: Pure Bash + yq, no Python/Node dependencies
 
+## Screenshot
+
+![ssc list command showing 65 interactive scripts](ssc-list-screenshot.png)
+
+*Example: `ssc list` shows 65 interactive scripts organized by type, status, category, and timer (150 total with `--all`)*
+
 ## Quick Start
 
 ```bash
