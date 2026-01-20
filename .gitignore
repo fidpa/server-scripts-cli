@@ -30,3 +30,6 @@ REDDIT_POST.md
 LINKEDIN_POST.md
 LINKEDIN_COMMENT_V*.md
 ssc-list-screenshot.png
+
+# Nextcloud/Rclone symlinks
+*.rclonelink
