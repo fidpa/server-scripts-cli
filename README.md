@@ -1,8 +1,12 @@
 # Server Scripts CLI (ssc)
 
-![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
-![Bash](https://img.shields.io/badge/Bash-4.0%2B-blue?logo=gnu-bash)
-![YAML](https://img.shields.io/badge/Config-YAML-orange)
+[![Version](https://img.shields.io/badge/version-1.2.0-blue.svg)](CHANGELOG.md)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Bash 4.0+](https://img.shields.io/badge/Bash-4.0%2B-blue?logo=gnu-bash)](https://www.gnu.org/software/bash/)
+[![Platform](https://img.shields.io/badge/platform-linux%20%7C%20macos-lightgrey)](README.md)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/fidpa/server-scripts-cli/graphs/commit-activity)
+[![YAML Config](https://img.shields.io/badge/Config-YAML-orange)](docs/MANIFEST_SCHEMA.md)
+[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 **YAML-based script management for shell and Python scripts**
 
@@ -55,6 +59,23 @@ cd server-scripts-cli
 
 ## Installation
 
+### Automated Installation (Recommended)
+
+```bash
+# One-liner installation (adds alias to ~/.bashrc)
+curl -sSL https://raw.githubusercontent.com/fidpa/server-scripts-cli/main/install.sh | bash
+
+# Or with options:
+./install.sh --local   # Alias in ~/.bashrc (default)
+./install.sh --user    # Symlink to ~/.local/bin
+./install.sh --system  # Install to /usr/local/bin (requires sudo)
+```
+
+### Manual Installation
+
+<details>
+<summary>Click to expand manual options</summary>
+
 **Option 1: Local Repository (Alias)**
 ```bash
 git clone https://github.com/fidpa/server-scripts-cli ~/server-scripts-cli
@@ -80,6 +101,8 @@ sudo chmod +x /usr/local/bin/{ssc,generate-manifest.sh}
 mkdir -p ~/.local/bin
 ln -s $(pwd)/ssc.sh ~/.local/bin/ssc
 ```
+
+</details>
 
 All options install the command as `ssc` for consistency.
 
@@ -123,21 +146,32 @@ See [docs/MANIFEST_SCHEMA.md](docs/MANIFEST_SCHEMA.md) for complete schema refer
 
 ## Documentation
 
+- [Documentation Index](docs/README.md) - All documentation
 - [Setup Guide](docs/SETUP.md) - Installation, configuration, systemd integration
 - [Manifest Schema](docs/MANIFEST_SCHEMA.md) - Complete YAML reference
 - [Troubleshooting](docs/TROUBLESHOOTING.md) - Common issues
 
 ## Examples
 
-See [examples/demo-scripts/](examples/demo-scripts/) for 4 ready-to-run examples:
+See [examples/](examples/) for 4 ready-to-run demo scripts:
 - `backup-example.sh` - Scheduled backup with root privileges
 - `monitoring-example.sh` - System metrics collection
 - `health-check.sh` - Service health validation
 - `deploy-example.sh` - Deployment automation
 
+## Contributing
+
+Contributions are welcome! Please read our guidelines before submitting:
+
+- [Contributing Guide](CONTRIBUTING.md) - How to contribute
+- [Code of Conduct](CODE_OF_CONDUCT.md) - Community standards
+- [Security Policy](SECURITY.md) - Reporting vulnerabilities
+
 ## License
 
 MIT License - Copyright (c) 2025-2026 Marc Allgeier (fidpa)
+
+See [LICENSE](LICENSE) for details.
 
 ## Author
 

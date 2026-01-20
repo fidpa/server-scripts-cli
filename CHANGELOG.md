@@ -5,6 +5,34 @@ All notable changes to server-scripts-cli will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.0] - 2026-01-20
+
+### Added
+- **Automated Installer** (`install.sh`): One-liner installation with 3 modes
+  - `--local`: Add alias to ~/.bashrc (default)
+  - `--user`: Symlink to ~/.local/bin
+  - `--system`: Install to /usr/local/bin (requires sudo)
+  - Prerequisites check (Bash 4.0+, yq, git)
+  - Color-coded logging and idempotent execution
+- **Contributing Guide** (`CONTRIBUTING.md`): Fork → Branch → PR workflow
+- **Security Policy** (`SECURITY.md`): Vulnerability disclosure process
+- **Code of Conduct** (`CODE_OF_CONDUCT.md`): Contributor Covenant v2.1
+- **GitHub Issue Templates**: Bug Report and Feature Request templates
+- **GitHub PR Template**: Standardized pull request format
+- **Subdir Navigation**: `docs/README.md` and `examples/README.md` index files
+
+### Changed
+- **README.md**: Complete overhaul
+  - Added 7 professional badges (Version, License, Bash, Platform, Maintenance, YAML, Contributions)
+  - One-liner installation as primary method
+  - Manual installation moved to collapsible `<details>` section
+  - New "Contributing" section with links to community docs
+  - Updated Documentation and Examples sections with index links
+
+### Documentation
+- Added `docs/README.md` - Documentation index with file descriptions
+- Added `examples/README.md` - Demo scripts overview with usage guide
+
 ## [1.1.1] - 2026-01-17
 
 ### Fixed

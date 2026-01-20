@@ -17,14 +17,14 @@
 #   ssc logs <script-name>        # Show service logs
 #
 # Documentation: docs/SETUP.md
-# Version: 1.1.0
+# Version: 1.2.0
 # Created: 2026-01-02
-# Updated: 2026-01-16
+# Updated: 2026-01-20
 
 set -uo pipefail
 
 # ===== Configuration =====
-readonly VERSION="1.1.0"
+readonly VERSION="1.2.0"
 readonly INTERACTIVE_TYPES="report admin diagnostic check orchestrator"
 readonly SCRIPT_DIR="$(cd "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")" && pwd)"
 # REPO_ROOT: Try git first, fallback to script directory
