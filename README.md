@@ -7,6 +7,7 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/fidpa/server-scripts-cli/graphs/commit-activity)
 [![YAML Config](https://img.shields.io/badge/Config-YAML-orange)](docs/MANIFEST_SCHEMA.md)
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md)
+![CI](https://github.com/fidpa/server-scripts-cli/actions/workflows/lint.yml/badge.svg)
 
 **YAML-based script management for shell and Python scripts**
 

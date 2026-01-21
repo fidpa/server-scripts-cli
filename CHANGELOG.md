@@ -5,6 +5,22 @@ All notable changes to server-scripts-cli will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+## [1.3.0] - 2026-01-21
+
+### Added
+- CI/CD pipeline with GitHub Actions
+- ShellCheck linting workflow (severity: error)
+- Bash syntax validation workflow
+- Automated release workflow (tag-triggered)
+- `.shellcheckrc` configuration (Best Practices 2025)
+- CI status badge in README.md
+
+### Changed
+- All bash scripts now validated on every push to main branch
+- Automated GitHub Releases on version tags
+
 ## [1.2.0] - 2026-01-20
 
 ### Added
@@ -100,6 +116,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Complete documentation suite
 - MIT License
 
+[Unreleased]: https://github.com/fidpa/server-scripts-cli/compare/v1.3.0...HEAD
+[1.3.0]: https://github.com/fidpa/server-scripts-cli/compare/v1.2.0...v1.3.0
+[1.2.0]: https://github.com/fidpa/server-scripts-cli/compare/v1.1.1...v1.2.0
 [1.1.1]: https://github.com/fidpa/server-scripts-cli/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/fidpa/server-scripts-cli/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/fidpa/server-scripts-cli/releases/tag/v1.0.0
